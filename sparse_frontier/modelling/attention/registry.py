@@ -6,6 +6,7 @@ from .efficient_prefilling import (
 )
 from .efficient_decoding import QuestAttention
 from .kv_compression import SnapKVCompression, AdaSnapKVCompression
+from .rl_sparse_attention import RLSparseAttention
 from sparse_frontier.utils import GlobalSettings
 from .handler import AttentionHandler
 
@@ -18,6 +19,7 @@ ATTENTION_REGISTRY = {
     'ada_snapkv': AdaSnapKVCompression,
     'quest': QuestAttention,
     'flexprefill': FlexPrefill,
+    'rl_sparse': RLSparseAttention,
 }
 
 
